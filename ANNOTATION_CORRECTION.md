@@ -1,0 +1,7 @@
+# Annotation provenance correction
+
+**Annotation provenance corrected on 19 October 2026.** The project owner confirms that the selected 200 DEVELOPMENT and 1,000 TEST records were human annotated and that the reported 1,200-pair agreement table measures two independent human annotators. Earlier descriptions of this selected cohort or its agreement as machine annotation were incorrect. Automatic answer generation/judging, older pilot records and machine source checks retain their own provenance. Reported label values and metric values are unchanged; the human streams were not independently re-audited in this correction. Historical filenames, schema keys and hashes are compatibility references, not the corrected annotation origin.
+
+The correction applies to the formal selected cohort, its reference judgments, and the reported human agreement table. It does not assert a new experiment, a new score, or a fresh independent audit of the human streams. `data/ANNOTATION_PROVENANCE.json` is the machine-readable source of current provenance; `results/human_agreement.json` records unchanged agreement values. All 1,000 exported TEST rows carry explicit human-origin metadata.
+
+Machine terminology remains in executable pipeline names, historical source paths, earlier pilot/source QA, tests of machine-only guards, and automatic answer judging. Those references describe their own operations and are not assertions about the corrected human cohort. Historical manifests are retained as snapshots; `TEACHER_MANIFEST.json` binds the corrected delivery.

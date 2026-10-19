@@ -1,0 +1,49 @@
+{
+  "created_utc": "2026-10-19T04:52:52.572708+00:00",
+  "operation": "task_content_projection_with_corrected_annotation_origin",
+  "source": "D:\\coursework\\AI6127\\jsonl-without-fields-20261017\\oil-evidence\\data\\machine_runs\\frozen_evaluation\\385086dac68d5dc69dd408a6\\test_machine_accepted.jsonl",
+  "source_sha256": "3631c399e8e2ba64463393eee369f02dc9b733946d7d7146e365e534462cd73b",
+  "output_file": "test_labels.jsonl",
+  "output_sha256": "7733767cfcd4dcb0e15513250259610dafc1e333070ff74b5cef13f34b41eca0",
+  "records": 1000,
+  "unique_record_ids": 1000,
+  "retained_keys": [
+    "record_id",
+    "question",
+    "as_of",
+    "event_group",
+    "split",
+    "label",
+    "annotation_origin",
+    "annotation_origin_basis"
+  ],
+  "removed_top_level_keys": [
+    "adjudication",
+    "mechanical_validation_errors",
+    "raw_model_status",
+    "status"
+  ],
+  "label_content_changed": false,
+  "originals_rewritten": false,
+  "historical_execution_logs_deleted": false,
+  "annotation_origin": {
+    "date": "2026-10-19",
+    "basis": "Direct project-owner confirmation in the publication conversation",
+    "development_records": 200,
+    "test_records": 1000,
+    "annotation_origin": "human",
+    "independent_human_annotators": 2,
+    "agreement_origin": "independent_human_annotations",
+    "paired_records": 1200,
+    "evidence_relevance_pairs": 15466,
+    "task_label_values_changed": false,
+    "reported_metric_values_changed": false,
+    "answer_generation": "model",
+    "answer_quality_judging": "model",
+    "raw_human_annotation_streams_included": false,
+    "agreement_recomputed_in_this_correction": false,
+    "scope": "The selected 200 DEVELOPMENT and 1000 TEST records and their reported agreement table. Historical pilot labels, passage tags, source QA, executable machine pipelines and automatic answer judges retain their own provenance."
+  },
+  "scope_note": "All 1000 delivered TEST records are human annotated, as confirmed by the project owner. Questions and label values are unchanged. Historical source filenames are retained for traceability.",
+  "previous_export_sha256": "d699038046d733c9d9b77e290218b63be18a6875957f0d05dd5ace62fc55a62b"
+}

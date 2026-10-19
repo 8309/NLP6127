@@ -1,0 +1,29 @@
+[project]
+name = "oil-evidence"
+version = "0.1.0"
+description = "Reproducible oil-market evidence retrieval and annotation workbench"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "httpx>=0.28,<1",
+    "beautifulsoup4>=4.13,<5",
+    "pypdf[crypto]>=6,<7",
+    "numpy>=2,<3",
+    "rank-bm25>=0.2.2,<0.3",
+    "fastembed>=0.7,<0.9",
+    "streamlit>=1.45,<2",
+    "fonttools>=4,<5",
+    "jsonschema>=4.25,<5",
+]
+
+[dependency-groups]
+dev = ["pytest>=8,<10"]
+
+[project.scripts]
+oil = "oil_evidence.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

@@ -1,0 +1,31 @@
+[corpus]
+start_date = "2018-01-01"
+end_date = "2026-10-05"
+segmentation_version = "semantic-page-v1"
+chunk_words = 160
+min_words = 65
+max_words = 240
+max_context_words = 480
+request_delay_seconds = 1.0
+max_document_mb = 25
+download_budget_mb = 300
+
+[retrieval]
+embedding_model = "BAAI/bge-small-en-v1.5"
+top_k = 5
+candidate_k = 50
+rrf_k = 60
+
+[llm]
+# Generic chat-completions-compatible endpoint. No remote calls without explicit configuration.
+enabled = true
+base_url = "https://api.deepseek.com"
+model = "deepseek-flash"
+verifier_model = "deepseek-flash"
+api_key_env = "OIL_LLM_API_KEY"
+budget_usd = 5.0
+# Conservative ceiling: Flash peak/cache-miss prices; off-peak/cache hits may cost less.
+# Verified against https://api-docs.deepseek.com/quick_start/pricing/ on 2026-10-06.
+input_usd_per_million = 0.30
+output_usd_per_million = 1.20
+max_output_tokens = 1500

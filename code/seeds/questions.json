@@ -1,0 +1,212 @@
+[
+  {
+    "question": "What were the main drivers of global crude oil supply in the latest available outlook?",
+    "question_zh": "What were the main drivers of global crude oil supply in the latest available outlook?",
+    "type": "fact",
+    "event_group": "global-supply-outlook",
+    "as_of": "2026-10-05"
+  },
+  {
+    "question": "What does EIA project for US crude oil production, and in what units?",
+    "question_zh": "What does EIA project for US crude oil production, and in what units?",
+    "type": "fact",
+    "event_group": "us-production-outlook",
+    "as_of": "2026-10-05"
+  },
+  {
+    "question": "What changes in global petroleum inventories does EIA expect?",
+    "question_zh": "What changes in global petroleum inventories does EIA expect?",
+    "type": "fact",
+    "event_group": "global-inventories",
+    "as_of": "2026-10-05"
+  },
+  {
+    "question": "Which non-OPEC producers are expected to contribute to supply growth?",
+    "question_zh": "Which non-OPEC producers are expected to contribute to supply growth?",
+    "type": "fact",
+    "event_group": "non-opec-growth",
+    "as_of": "2026-10-05"
+  },
+  {
+    "question": "What evidence distinguishes crude oil production from total liquid fuels production?",
+    "question_zh": "What evidence distinguishes crude oil production from total liquid fuels production?",
+    "type": "fact",
+    "event_group": "crude-liquids-definition",
+    "as_of": "2026-10-05"
+  },
+  {
+    "question": "What supply risks are associated with the Strait of Hormuz?",
+    "question_zh": "What supply risks are associated with the Strait of Hormuz?",
+    "type": "fact",
+    "event_group": "hormuz-risks",
+    "as_of": "2026-10-05"
+  },
+  {
+    "question": "What evidence connects refinery maintenance with crude oil demand?",
+    "question_zh": "What evidence connects refinery maintenance with crude oil demand?",
+    "type": "fact",
+    "event_group": "refinery-maintenance",
+    "as_of": "2026-10-05"
+  },
+  {
+    "question": "What assumptions about OPEC production underpin the latest oil balance forecast?",
+    "question_zh": "What assumptions about OPEC production underpin the latest oil balance forecast?",
+    "type": "fact",
+    "event_group": "opec-balance-assumptions",
+    "as_of": "2026-10-05"
+  },
+  {
+    "question": "As of 2025-06-30, what oil supply outlook had EIA published?",
+    "question_zh": "As of 2025-06-30, what oil supply outlook had EIA published?",
+    "type": "temporal",
+    "event_group": "outlook-2025-june",
+    "as_of": "2025-06-30"
+  },
+  {
+    "question": "As of 2026-06-01, which production changes were forecasts rather than observations?",
+    "question_zh": "As of 2026-06-01, which production changes were forecasts rather than observations?",
+    "type": "temporal",
+    "event_group": "forecast-observation-june",
+    "as_of": "2026-06-01"
+  },
+  {
+    "question": "What evidence shows that an announced OPEC production adjustment was implemented?",
+    "question_zh": "What evidence shows that an announced OPEC production adjustment was implemented?",
+    "type": "temporal",
+    "event_group": "opec-implementation",
+    "as_of": "2026-10-05"
+  },
+  {
+    "question": "When was the latest supply forecast published, and what period does it describe?",
+    "question_zh": "When was the latest supply forecast published, and what period does it describe?",
+    "type": "temporal",
+    "event_group": "publication-vs-period",
+    "as_of": "2026-10-05"
+  },
+  {
+    "question": "What recovery evidence follows a reported oil supply disruption?",
+    "question_zh": "What recovery evidence follows a reported oil supply disruption?",
+    "type": "temporal",
+    "event_group": "disruption-recovery",
+    "as_of": "2026-10-05"
+  },
+  {
+    "question": "Which sanctions affecting Russian oil were effective as of 2025-02-01?",
+    "question_zh": "Which sanctions affecting Russian oil were effective as of 2025-02-01?",
+    "type": "temporal",
+    "event_group": "russia-sanctions-2025",
+    "as_of": "2025-02-01"
+  },
+  {
+    "question": "What had been reported about Red Sea oil shipping risks by 2024-01-31?",
+    "question_zh": "What had been reported about Red Sea oil shipping risks by 2024-01-31?",
+    "type": "temporal",
+    "event_group": "red-sea-2024",
+    "as_of": "2024-01-31"
+  },
+  {
+    "question": "How did the oil supply forecast change between two consecutive EIA outlooks?",
+    "question_zh": "How did the oil supply forecast change between two consecutive EIA outlooks?",
+    "type": "comparison",
+    "event_group": "supply-forecast-revisions",
+    "as_of": "2026-10-05"
+  },
+  {
+    "question": "How do EIA and OPEC differ in their stated oil supply outlooks, accounting for definitions?",
+    "question_zh": "How do EIA and OPEC differ in their stated oil supply outlooks, accounting for definitions?",
+    "type": "comparison",
+    "event_group": "eia-opec-comparison",
+    "as_of": "2026-10-05"
+  },
+  {
+    "question": "How do production disruptions and shipping disruptions differ in their market effects?",
+    "question_zh": "How do production disruptions and shipping disruptions differ in their market effects?",
+    "type": "comparison",
+    "event_group": "production-vs-shipping",
+    "as_of": "2026-10-05"
+  },
+  {
+    "question": "How do US and non-US supply growth contributions compare?",
+    "question_zh": "How do US and non-US supply growth contributions compare?",
+    "type": "comparison",
+    "event_group": "us-production-outlook",
+    "as_of": "2026-10-05"
+  },
+  {
+    "question": "Do higher crude prices coincide with lower inventories in the supplied reports?",
+    "question_zh": "Do higher crude prices coincide with lower inventories in the supplied reports?",
+    "type": "comparison",
+    "event_group": "prices-and-inventories",
+    "as_of": "2026-10-05"
+  },
+  {
+    "question": "How do voluntary production targets compare with reported actual production?",
+    "question_zh": "How do voluntary production targets compare with reported actual production?",
+    "type": "comparison",
+    "event_group": "opec-implementation",
+    "as_of": "2026-10-05"
+  },
+  {
+    "question": "What differences appear between forecasts and later estimates for the same production period?",
+    "question_zh": "What differences appear between forecasts and later estimates for the same production period?",
+    "type": "comparison",
+    "event_group": "supply-forecast-revisions",
+    "as_of": "2026-10-05"
+  },
+  {
+    "question": "Can these sources establish how much global crude output was lost solely because of Red Sea rerouting?",
+    "question_zh": "Can these sources establish how much global crude output was lost solely because of Red Sea rerouting?",
+    "type": "insufficient",
+    "event_group": "red-sea-2024",
+    "as_of": "2026-10-05"
+  },
+  {
+    "question": "Do the available reports prove that an announced sanction caused a specific production decline?",
+    "question_zh": "Do the available reports prove that an announced sanction caused a specific production decline?",
+    "type": "insufficient",
+    "event_group": "sanctions-causality",
+    "as_of": "2026-10-05"
+  },
+  {
+    "question": "Can a forecast published after June 2025 establish what was known in May 2025?",
+    "question_zh": "Can a forecast published after June 2025 establish what was known in May 2025?",
+    "type": "insufficient",
+    "event_group": "outlook-2025-june",
+    "as_of": "2025-05-31"
+  },
+  {
+    "question": "What exact Brent price will occur next month, according to verified evidence?",
+    "question_zh": "What exact Brent price will occur next month, according to verified evidence?",
+    "type": "insufficient",
+    "event_group": "future-price-certainty",
+    "as_of": "2026-10-05"
+  },
+  {
+    "question": "Is there evidence that every sanctioned tanker stopped carrying crude oil?",
+    "question_zh": "Is there evidence that every sanctioned tanker stopped carrying crude oil?",
+    "type": "insufficient",
+    "event_group": "sanctioned-tanker-activity",
+    "as_of": "2026-10-05"
+  },
+  {
+    "question": "Can total petroleum liquids growth be treated as the same amount of crude oil growth?",
+    "question_zh": "Can total petroleum liquids growth be treated as the same amount of crude oil growth?",
+    "type": "insufficient",
+    "event_group": "crude-liquids-definition",
+    "as_of": "2026-10-05"
+  },
+  {
+    "question": "Do the supplied documents contain enough evidence to quantify a particular company's unreported outage?",
+    "question_zh": "Do the supplied documents contain enough evidence to quantify a particular company's unreported outage?",
+    "type": "insufficient",
+    "event_group": "unreported-outage",
+    "as_of": "2026-10-05"
+  },
+  {
+    "question": "Which claims about supply restoration remain uncertain or contradicted by the evidence?",
+    "question_zh": "Which claims about supply restoration remain uncertain or contradicted by the evidence?",
+    "type": "insufficient",
+    "event_group": "disruption-recovery",
+    "as_of": "2026-10-05"
+  }
+]

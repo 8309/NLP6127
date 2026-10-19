@@ -1,0 +1,132 @@
+{
+  "additional_local_official_sample_check": {
+    "exit_code": 0,
+    "local_junit_sha256": "a20192033bae00d69abdbf2401f8d48ac687cae1a41aebe69886b928e6bfac96",
+    "passed": 1,
+    "pytest_elapsed_seconds": 22.29,
+    "scope": "Read-only Australian and UK oil-chapter checks against retained local PDFs, using the byte-identical scope implementation. No PDF copied into the publication checkout. This result does not change the public full-suite skip count.",
+    "skipped": 0
+  },
+  "base_commit": "da11986a841697edde680f8dc3a1a20b3aa5737e",
+  "canonical_preservation": {
+    "default_corpus_switched": false,
+    "development_manifest_sha256": "5285ef90f31839b236c0516c50607967862539806f9041ecadc2acd0f617129a",
+    "development_protected_inputs": 71,
+    "hash_mismatches": [],
+    "historical_receipts_rebound_to_translation": false,
+    "source_closeout_implementation_files": 19,
+    "staged_corpus_sha256": "62dde606a50bda9c7404231498c5dc83f0cd4a36f1259540f2ae377f7ca767cd",
+    "staged_index_manifest_sha256": "920dadb72a7a16cb9a7b032a98467170bc8559cef7023fa2a94dce821a2d7dd2",
+    "staged_library_released": false,
+    "staged_vectors_sha256": "1ca739750f5149904244c7d00a73e69018d576c053d212ce9de9bf12e1a3831a"
+  },
+  "continuous_integration": {
+    "scope": "Language check only; full fixture suite counts above are local results, not GitHub Actions results.",
+    "workflow": ".github/workflows/english-publication.yml"
+  },
+  "full_fixture_suite": {
+    "errors": 0,
+    "exit_code": 0,
+    "failed": 0,
+    "junit_elapsed_seconds": 168.849,
+    "local_junit_sha256": "2342fdffd0cd628354e1b221d093df2951a187a9d75d876a6f7ae582cb808d4a",
+    "passed": 1415,
+    "pytest_elapsed_seconds": 169.14,
+    "scope": "Translated publication implementation, synthetic fixtures and existing test fixtures; not a formal retrieval or answer evaluation.",
+    "skipped": 3,
+    "skips": [
+      {
+        "reason": "Windows host lacks fixture symlink-creation permission.",
+        "test": "test_source_path_symlink_cannot_escape_data"
+      },
+      {
+        "reason": "Windows host lacks fixture symlink-creation permission.",
+        "test": "test_resolved_symlink_escape_refused"
+      },
+      {
+        "reason": "Excluded official PDF samples are not bundled in the public checkout.",
+        "test": "test_real_downloaded_samples_when_available"
+      }
+    ]
+  },
+  "language_check": {
+    "files_checked": 125,
+    "findings": [],
+    "passed": true,
+    "scope": "Literal Han text in current Git-visible UTF-8 files and paths; ignored data and prior commits are excluded.",
+    "script": "scripts/check_public_language.py"
+  },
+  "limitations": [
+    "English publication does not establish coursework acceptance or complete the remaining evaluation work.",
+    "Historical corpus receipts bind the original canonical implementation, not translated public code.",
+    "Previous Git history is retained; this is not a repository-history language rewrite.",
+    "Public code contains no raw-data package, model weights, annotation corpus or frozen local indexes.",
+    "Machine labels and machine review are not human gold or independent-human agreement."
+  ],
+  "privacy_audit": {
+    "scope": "Read-only public-file audit; negative-test credential examples are not actual service credentials. Raw originals, annotations, databases, model files, environment files and private JUnit XML remain excluded.",
+    "sensitive_artifact_path_findings": 0
+  },
+  "publication_scope": "Current English Git-visible tree only; ignored local data and previous commit history are excluded.",
+  "retained_initial_failure": {
+    "cause": "The test depended on a real private corpus before reaching its frozen-evaluation guard assertion.",
+    "exit_code": 1,
+    "failed": 1,
+    "local_junit_sha256": "f0b08bb1cd85717eae22d6fccc0e6bd58a90058e98b825abd00159663f6debde",
+    "passed": 1414,
+    "pytest_elapsed_seconds": 153.97,
+    "repair": "Provide a temporary synthetic corpus and isolate evaluation.DATA in the test. Keep the original frozen-guard assertion and production code unchanged.",
+    "skipped": 3,
+    "test": "test_formal_evaluation_rejects_unfrozen_pilot"
+  },
+  "schema_version": 1,
+  "status": "english_publication_checks_passed",
+  "synthetic_workbench_smoke": {
+    "checks": [
+      "English machine annotation display and archive-note readback",
+      "Partial-answer and formal-exclusion filters",
+      "BM25 evidence-only query with cutoff-valid evidence",
+      "Candidate review display"
+    ],
+    "passed": true,
+    "scope": "Temporary synthetic Streamlit AppTest data; not a live-corpus replay or saved human review.",
+    "tabs": 4
+  },
+  "targeted_fixture_checks": {
+    "pipeline_guards_and_language_checker": {
+      "exit_code": 0,
+      "passed": 11,
+      "skipped": 0
+    },
+    "translated_annotation_and_development_tests": {
+      "exit_code": 0,
+      "passed": 108,
+      "skipped": 1
+    }
+  },
+  "usage": {
+    "codex_subscription_credit_usage": "Not measured",
+    "new_hosted_model_calls": 0,
+    "new_human_labels": 0
+  },
+  "verified_date": "2026-10-12",
+  "snapshot_scope": "Historical source/package/test receipt. Embedded hashes and counts describe the original snapshot, not the corrected current delivery. See TEACHER_MANIFEST.json for current file hashes.",
+  "annotation_origin_correction": {
+    "date": "2026-10-19",
+    "basis": "Direct project-owner confirmation in the publication conversation",
+    "development_records": 200,
+    "test_records": 1000,
+    "annotation_origin": "human",
+    "independent_human_annotators": 2,
+    "agreement_origin": "independent_human_annotations",
+    "paired_records": 1200,
+    "evidence_relevance_pairs": 15466,
+    "task_label_values_changed": false,
+    "reported_metric_values_changed": false,
+    "answer_generation": "model",
+    "answer_quality_judging": "model",
+    "raw_human_annotation_streams_included": false,
+    "agreement_recomputed_in_this_correction": false,
+    "scope": "The selected 200 DEVELOPMENT and 1000 TEST records and their reported agreement table. Historical pilot labels, passage tags, source QA, executable machine pipelines and automatic answer judges retain their own provenance."
+  }
+}

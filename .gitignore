@@ -1,0 +1,13 @@
+.venv/
+.model-cache/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+.env
+.env.*
+*.log
+*.sqlite
+*.sqlite3
+*.db
+data/machine_runs/
+data/query_runs/
