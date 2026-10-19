@@ -105,8 +105,8 @@
       "sha256": "77b4c119ca1d62449630c4a11b2ae31c2de653ac61be04dd2a322675f93cd78c"
     },
     "code/docs/FINAL_REPORT.md": {
-      "bytes": 63393,
-      "sha256": "0382204a479f9d84858de5aa30a0caddf2ddae69d47dbe604560cff1a5794594"
+      "bytes": 62864,
+      "sha256": "ca274e2441ecc64996beb7688278b8613567f08b67c2bbc2aa487cd598b8a635"
     },
     "code/docs/GITHUB_PROGRESS.md": {
       "bytes": 38109,
@@ -1193,8 +1193,8 @@
       "sha256": "44d54ef203ebcd8a2662ad6ec5633133cfeb91486afb4381a6c8d526e7d01dba"
     },
     "report.pdf": {
-      "bytes": 68573,
-      "sha256": "ae9c8a80ea9794e3840bfcccf03130c914eb6646e044996fd7c306aec6c9637d"
+      "bytes": 68326,
+      "sha256": "ad0a0a39a6ef60aa8d5611a710375601ce098ebfb619cc6c2b25826b1d57548f"
     },
     "requirements-teacher.txt": {
       "bytes": 224,
