@@ -7,6 +7,8 @@ Legend: [x] implemented/verified as noted; [ ] incomplete. No calendar schedule.
 
 Current delivery scope (19 October 2026): 1,000 TEST records. Older development and pipeline checkpoints below describe historical work, not additional delivered evaluation records. Historical executable guards and fixture sizes still bind the original archived runs.
 
+- [x] Apply the latest Abstract/Q1 edits to the report, consolidate repeated citations, remove two uncited references and renumber the remaining 50 entries. Verify reference targets and PDF project links, then render and inspect the updated report.
+
 This is the English publication edition. Historical verification receipts refer to the preserved canonical bilingual implementation and excluded local artifacts, not the translated public code or interface. Exact historical replay requires that matching implementation and raw snapshot. Translation does not rebuild the corpus, release the staged library or complete the coursework.
 
 ## Assignment completion execution

@@ -49,7 +49,7 @@ def inline(text):
         if not re.match(r"[A-Za-z][A-Za-z0-9+.-]*:", target) and not target.startswith("/"):
             relative = posixpath.normpath("docs/" + target)
             if not relative.startswith("../"):
-                url = "https://github.com/8309/6127NLP/blob/main/" + relative
+                url = "https://github.com/8309/NLP6127/blob/main/code/" + relative
                 return f'<link href="{url}" color="#215a75">{label}</link>'
         return label + " (" + target + ")"
     return re.sub(r"\[([^\]]+)\]\(([^)]+)\)", link, text)

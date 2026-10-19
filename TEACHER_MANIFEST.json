@@ -77,8 +77,8 @@
       "sha256": "30d6cf2402b7a12162401b19ee3f758e4747a1d7fe46d38103468ae24cf1f8aa"
     },
     "code/TASKS.md": {
-      "bytes": 63101,
-      "sha256": "4dc0255f0af20612d6a9df3f583c2ed41ba1041a44e702f58c6b366777c504e5"
+      "bytes": 63351,
+      "sha256": "a3ef3296ca47c200c197342e507612761eac041930889da5b8ed078c42a12dac"
     },
     "code/app.py": {
       "bytes": 30467,
@@ -105,8 +105,8 @@
       "sha256": "909caf6856d71a328c682633c3ed619f61c1365b371a37d7409f05831e356976"
     },
     "code/docs/FINAL_REPORT.md": {
-      "bytes": 61570,
-      "sha256": "ddfa0a610f80f04f351d18c5d1317aef7f2ac30b3860c00f09e07e419ef815b8"
+      "bytes": 60515,
+      "sha256": "6f3ae23bb012fbcd1a753ef27e1a7425fd0f9f45c69b57958fbdbdce4b4ccf2b"
     },
     "code/docs/GITHUB_PROGRESS.md": {
       "bytes": 37988,
@@ -477,8 +477,8 @@
       "sha256": "aba3dab9362f128a6e70d5afb1ccaeef2e90c152d1478d45824afa14762f9d31"
     },
     "code/scripts/render_coursework_report.py": {
-      "bytes": 10911,
-      "sha256": "5cf51c5d34fe98e4beae7995ed2641307bccb6b72bf1b50129aa6a9825fb34e7"
+      "bytes": 10916,
+      "sha256": "f862bc4171f5053275f1d3ea4bd0fc93340e2ee378a96dd42959d96352ff9ab6"
     },
     "code/scripts/render_coursework_slides.mjs": {
       "bytes": 32473,
@@ -1193,8 +1193,8 @@
       "sha256": "b962297733bea04d7e4cc562d05cd6ffbef6e90f3624340d10e4372f0f8a4db1"
     },
     "report.pdf": {
-      "bytes": 67545,
-      "sha256": "3cb074b74a26c1d86019ec8adc5ddfcd883ce6d989d74f1671aa543888c0c4ec"
+      "bytes": 67032,
+      "sha256": "6584b13c3bda095cd0f990405911bd47e5fda309b31ff2a52c43e673d03b8336"
     },
     "requirements-teacher.txt": {
       "bytes": 224,
