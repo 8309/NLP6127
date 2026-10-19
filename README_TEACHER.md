@@ -45,7 +45,7 @@ The portable loader validates this delivery's file manifest and source-page offs
 
 ## Contents and scope
 
-`report.pdf` and `presentation.pptx` include the corrected annotation provenance. Results are expanded under `results/`; there is no nested ZIP to open. Cover identifiers are intentionally blank. All 1,000 TEST records in `data/test_labels.jsonl` are human annotated. The selected 200 DEVELOPMENT records and the 1,200-pair / 15,466-relevance-pair agreement table are also human annotations, as confirmed by the project owner on 19 October 2026. See `data/ANNOTATION_PROVENANCE.json`, `data/LABEL_ORIGIN.json` and `results/human_agreement.json`. Label content and metric values are unchanged; raw human annotation streams are not bundled and agreement was not recomputed in this correction. Answer generation and answer-quality judging remain automatic.
+`report.pdf` and `presentation.pptx` cover the 1,000 human-annotated TEST records in `data/test_labels.jsonl`. Results are expanded under `results/`. Cover identifiers are intentionally blank. See `data/ANNOTATION_PROVENANCE.json`, `data/LABEL_ORIGIN.json` and `results/human_agreement.json`. Questions, labels and TEST evaluation scores are unchanged. The two independent raw human annotation streams are not bundled. Answer generation and answer-quality judging remain automatic.
 
 Raw downloaded PDF and HTML files, historical run logs, the embedding cache database, virtual environments and account credentials are excluded. Model attribution and the upstream MIT notice are in `MODEL_NOTICES.md`. Corpus source attribution and redistribution metadata remain attached to each passage and document; preparing this local package is not blanket clearance to publish its source texts.
 

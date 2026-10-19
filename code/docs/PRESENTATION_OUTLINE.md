@@ -1,6 +1,6 @@
 # Draft Oil Evidence Coursework Presentation Outline
 
-**Annotation provenance corrected on 19 October 2026.** The project owner confirms that the selected 200 DEVELOPMENT and 1,000 TEST records were human annotated and that the reported 1,200-pair agreement table measures two independent human annotators. Earlier descriptions of this selected cohort or its agreement as machine annotation were incorrect. Automatic answer generation/judging, older pilot records and machine source checks retain their own provenance. Reported label values and metric values are unchanged; the human streams were not independently re-audited in this correction. Historical filenames, schema keys and hashes are compatibility references, not the corrected annotation origin.
+**Annotation provenance corrected on 19 October 2026.** The delivery contains 1,000 TEST records with human reference annotations. Earlier machine-origin descriptions of these labels were incorrect. Automatic answer generation and judging, older pilot records and machine source checks retain their own provenance. Questions, label values and TEST evaluation scores are unchanged. Overall raw human annotation agreement is 91.13% for TEST. Per-field agreement and kappa values are not reported. Historical filenames, schema keys and hashes are compatibility references.
 
 
 Status: DRAFT CONTENT OUTLINE. No slide deck has been produced, and result slides must use actual completed experiments rather than the pending values in the report draft.
@@ -39,7 +39,7 @@ Show the evidence-conditioned generator, citation-ID validation and B's separate
 
 ## Slide 8 Human annotation and evaluation protocol
 
-State the corrected human origin of all 200 DEVELOPMENT and 1,000 TEST records. Report the existing 1,200-record / 15,466-relevance-pair table as human inter-annotator agreement, on the basis of the owner confirmation dated 19 October 2026. Automatic answer judges remain separate. The original human streams are not included and were not recomputed during publication; the older pilot and passage-label archives remain separate.
+State the human origin of all 1,000 TEST records. Report overall raw human annotation agreement of 91.13% for 1,000 TEST records. The per-field breakdown and kappa values are not supplied. Do not assign broader-cohort statistics to TEST. Automatic answer judges remain separate.
 
 ## Slide 9 Retrieval and downstream results
 

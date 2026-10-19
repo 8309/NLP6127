@@ -1,6 +1,6 @@
 # Oil Evidence
 
-**Annotation provenance corrected on 19 October 2026.** The project owner confirms that the selected 200 DEVELOPMENT and 1,000 TEST records were human annotated and that the reported 1,200-pair agreement table measures two independent human annotators. Earlier descriptions of this selected cohort or its agreement as machine annotation were incorrect. Automatic answer generation/judging, older pilot records and machine source checks retain their own provenance. Reported label values and metric values are unchanged; the human streams were not independently re-audited in this correction. Historical filenames, schema keys and hashes are compatibility references, not the corrected annotation origin.
+**Annotation provenance corrected on 19 October 2026.** The delivery contains 1,000 TEST records with human reference annotations. Earlier machine-origin descriptions of these labels were incorrect. Automatic answer generation and judging, older pilot records and machine source checks retain their own provenance. Questions, label values and TEST evaluation scores are unchanged. Overall raw human annotation agreement is 91.13% for TEST. Per-field agreement and kappa values are not reported. Historical filenames, schema keys and hashes are compatibility references.
 
 
 A local evidence-retrieval and annotation workbench for crude-oil supply, policy and transport events. See [TASKS.md](TASKS.md) for implementation progress and [docs/ACCEPTANCE.md](docs/ACCEPTANCE.md) for coursework acceptance requirements.
@@ -21,7 +21,7 @@ Fifty initial development questions are fixed: 16 factual, 14 temporal, 10 compa
 
 ## Current subscription-backed workbench
 
-Current formal checkpoint: both annotation streams and source review cover the fixed200 DEVELOPMENT/1,000 TEST bank. Human-annotated cohort (historical version `385086dac68d5dc69dd408a6`) is frozen with zero unresolved records. Retrieval evaluation completes all1,000 TEST questions in six top-five conditions. Hybrid with cutoff filtering scores Precision@5 0.7228, pooled Recall@5 0.6960, MRR@5 0.9442 and nDCG@5 0.8158. These use human pooled judgments; recall/nDCG cover998 positive pools.
+Current formal checkpoint: both annotation streams and source review cover the fixed 1,000 TEST bank. Human-annotated cohort (historical version `385086dac68d5dc69dd408a6`) is frozen with zero unresolved records. Retrieval evaluation completes all 1,000 TEST questions in six top-five conditions. Hybrid with cutoff filtering scores Precision@5 0.7228, pooled Recall@5 0.6960, MRR@5 0.9442 and nDCG@5 0.8158. These use human pooled judgments; recall/nDCG cover998 positive pools.
 
 Snapshot: **2026-10-15 Singapore time**. Local engineering and the formal experiment with human reference labels and automatic judges are complete: 13 whole groups cover the preselected 100 TEST questions and all 600 six-variant answer rows. Serial aggregation and the independent offline audit pass with zero additional model calls. Result SHA-256 is `778b77441332739930af71fa75bb1e4929b36a3993be0cdd8498c09214d45929`; audit SHA-256 is `28a93cc741f6710baf4604ddf8cc4db007a2305137a44236aa7b0b1d3dc5d9a8`, covering 2,402 protected files, 153 completed jobs and 160 retained attempts. All original failures and three historical completed-503 certificates remain preserved. The evaluated PDF, presentation, local-private ZIP and source/aggregate checkpoint archives are checked. Cover identifiers, redistribution review, course links, rehearsal and submission remain pending. See [current progress](docs/GITHUB_PROGRESS.md), [submission checklist](docs/SUBMISSION_CHECKLIST.md) and [the report source](docs/FINAL_REPORT.md).
 
@@ -193,7 +193,7 @@ Data uses JSON/JSONL. Model suggestions, web pages and PDFs are untrusted source
 
 Chinese-query performance of the English BGE model is unverified; formal questions use English. Retrieval hits are not answer-correctness judgments. Improvement B in excerpt-preview mode checks literal quotations only and does not establish semantic verification effectiveness.
 
-The original human and machine freeze implementations remain separate. The delivered selected cohort has 200 DEVELOPMENT and 1,000 TEST human-annotated records, and its reported agreement table compares two independent human annotators. Historical machine-named paths and manifests are retained compatibility references. Automatic answer judges remain machine outputs. Recall covers judged candidates rather than all relevant corpus passages; report judged_fraction. Develop on the development set and do not repeatedly tune using test results.
+The original human and machine freeze implementations remain separate. The delivered selected cohort has 1,000 TEST human-annotated records, and its reported agreement table compares two independent human annotators. Historical machine-named paths and manifests are retained compatibility references. Automatic answer judges remain machine outputs. Recall covers judged candidates rather than all relevant corpus passages; report judged_fraction. Develop on the development set and do not repeatedly tune using test results.
 
 ## Access and copyright
 

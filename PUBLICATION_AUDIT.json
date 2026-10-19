@@ -4,21 +4,28 @@
   "scope": "All Git-publishable project files; local .venv, caches and .git are excluded.",
   "annotation_provenance": {
     "date": "2026-10-19",
-    "basis": "Direct project-owner confirmation in the publication conversation",
-    "development_records": 200,
+    "basis": "Confirmed human annotation origin for the delivered TEST records",
     "test_records": 1000,
     "annotation_origin": "human",
     "independent_human_annotators": 2,
     "agreement_origin": "independent_human_annotations",
-    "paired_records": 1200,
-    "evidence_relevance_pairs": 15466,
+    "agreement_status": "reported_test_overall_raw_agreement",
     "task_label_values_changed": false,
-    "reported_metric_values_changed": false,
+    "test_evaluation_metric_values_changed": false,
     "answer_generation": "model",
     "answer_quality_judging": "model",
     "raw_human_annotation_streams_included": false,
     "agreement_recomputed_in_this_correction": false,
-    "scope": "The selected 200 DEVELOPMENT and 1000 TEST records and their reported agreement table. Historical pilot labels, passage tags, source QA, executable machine pipelines and automatic answer judges retain their own provenance."
+    "scope": "The 1000 delivered TEST records. Historical pilot labels, passage tags, source QA, executable machine pipelines and automatic answer judges retain their own provenance.",
+    "reported_agreement": {
+      "metric": "overall_raw_agreement",
+      "label": "Overall raw agreement",
+      "value": 0.9113,
+      "display_value": "91.13%",
+      "field_scope": "overall",
+      "basis": "Reported TEST-only overall raw agreement; not recomputed in this publication edit.",
+      "metric_type_confirmed": true
+    }
   },
   "test_records_verified": 1000,
   "test_task_content_unchanged": true,
@@ -31,5 +38,10 @@
   "slide_layout_warning": "Slide 10 table height heuristic warns by 0.0486 inches; rendered slide was inspected with no text overlap.",
   "remaining_machine_references": "Executable machine pipelines and their tests; historical pilot/source-QA receipts; historical compatibility identifiers; model answer generation and judging. These are outside the corrected human-cohort origin.",
   "human_agreement_recomputed": false,
-  "current_checks": "Exact label comparison, aggregate numeric comparison, corpus/model byte comparison, PDF/PPTX text extraction, all slide renders, package and editable-chart validation, source language scan, 55 Node fixtures and offline retrieval smoke."
+  "current_checks": "TEST labels and corpus/index/model hashes unchanged; answer-evaluation and audit payloads unchanged; TEST-only documentation scan; PDF text and layout review; PPTX text/notes, native tables and original chart/workbook validation; language and syntax checks; focused fixtures and offline demo check.",
+  "delivery_scope": "1000 TEST records",
+  "test_overall_raw_agreement": 0.9113,
+  "test_agreement_metric": "overall_raw_agreement",
+  "test_agreement_recomputed": false,
+  "historical_code_scope": "Archived pipeline implementations and their fixtures retain their original cohort-size guards; they are not current delivery coverage metadata."
 }

@@ -98,7 +98,7 @@
     "No raw documents, corpus, annotation records, databases or indexes are shipped.",
     "Historical reconstruction requires the excluded matching local snapshots.",
     "Machine source checks are neither human gold labels nor whole-corpus approval.",
-    "The owner confirms human annotation of the selected 200/1000 cohort. Solo completion and the 100-question answer subset have user-reported instructor approval.",
+    "The delivered 1000 TEST records have human annotations. Solo completion and the 100-question answer subset have user-reported instructor approval.",
     "Local engineering, specified held-out machine evaluation, offline audit and local artifact/archive checks are complete; rights review, identity fields, rehearsal, accessible course links and submission remain pending.",
     "Index integrity and optional operational smoke do not establish retrieval accuracy or resolve the historical failed comparison.",
     "Pooled retrieval metrics use human references; automatic ordinal answer scores are not human-rated accuracy; physical model identity and subscription dollar cost remain unknown."
@@ -129,10 +129,8 @@
     "human_gold": true,
     "machine_dataset_version": "385086dac68d5dc69dd408a6",
     "manifest_sha256": "704c2c291cf97fa543f12da78baa552afbb32f415907c527821f454ab980797c",
-    "accepted_development_questions": 200,
     "accepted_test_questions": 1000,
     "unresolved_frozen_questions": 0,
-    "annotations_per_stream": 1200,
     "retrieval_evaluated_test_questions": 1000,
     "ranked_query_conditions": 6000,
     "retrieval_depth": 5,
@@ -188,21 +186,28 @@
     "human_gold_scope": "Reference annotations only; automatic answer judgments are not human ratings.",
     "annotation_origin_correction": {
       "date": "2026-10-19",
-      "basis": "Direct project-owner confirmation in the publication conversation",
-      "development_records": 200,
+      "basis": "Confirmed human annotation origin for the delivered TEST records",
       "test_records": 1000,
       "annotation_origin": "human",
       "independent_human_annotators": 2,
       "agreement_origin": "independent_human_annotations",
-      "paired_records": 1200,
-      "evidence_relevance_pairs": 15466,
+      "agreement_status": "reported_test_overall_raw_agreement",
       "task_label_values_changed": false,
-      "reported_metric_values_changed": false,
+      "test_evaluation_metric_values_changed": false,
       "answer_generation": "model",
       "answer_quality_judging": "model",
       "raw_human_annotation_streams_included": false,
       "agreement_recomputed_in_this_correction": false,
-      "scope": "The selected 200 DEVELOPMENT and 1000 TEST records and their reported agreement table. Historical pilot labels, passage tags, source QA, executable machine pipelines and automatic answer judges retain their own provenance."
+      "scope": "The 1000 delivered TEST records. Historical pilot labels, passage tags, source QA, executable machine pipelines and automatic answer judges retain their own provenance.",
+      "reported_agreement": {
+        "metric": "overall_raw_agreement",
+        "label": "Overall raw agreement",
+        "value": 0.9113,
+        "display_value": "91.13%",
+        "field_scope": "overall",
+        "basis": "Reported TEST-only overall raw agreement; not recomputed in this publication edit.",
+        "metric_type_confirmed": true
+      }
     }
   },
   "formal_machine_parallel_continuation": {
@@ -236,21 +241,28 @@
     "human_gold_scope": "Reference annotations only; automatic answer judgments are not human ratings.",
     "annotation_origin_correction": {
       "date": "2026-10-19",
-      "basis": "Direct project-owner confirmation in the publication conversation",
-      "development_records": 200,
+      "basis": "Confirmed human annotation origin for the delivered TEST records",
       "test_records": 1000,
       "annotation_origin": "human",
       "independent_human_annotators": 2,
       "agreement_origin": "independent_human_annotations",
-      "paired_records": 1200,
-      "evidence_relevance_pairs": 15466,
+      "agreement_status": "reported_test_overall_raw_agreement",
       "task_label_values_changed": false,
-      "reported_metric_values_changed": false,
+      "test_evaluation_metric_values_changed": false,
       "answer_generation": "model",
       "answer_quality_judging": "model",
       "raw_human_annotation_streams_included": false,
       "agreement_recomputed_in_this_correction": false,
-      "scope": "The selected 200 DEVELOPMENT and 1000 TEST records and their reported agreement table. Historical pilot labels, passage tags, source QA, executable machine pipelines and automatic answer judges retain their own provenance."
+      "scope": "The 1000 delivered TEST records. Historical pilot labels, passage tags, source QA, executable machine pipelines and automatic answer judges retain their own provenance.",
+      "reported_agreement": {
+        "metric": "overall_raw_agreement",
+        "label": "Overall raw agreement",
+        "value": 0.9113,
+        "display_value": "91.13%",
+        "field_scope": "overall",
+        "basis": "Reported TEST-only overall raw agreement; not recomputed in this publication edit.",
+        "metric_type_confirmed": true
+      }
     }
   },
   "formal_machine_completed_evaluation": {
@@ -262,7 +274,6 @@
     "human_gold": true,
     "machine_dataset_version": "385086dac68d5dc69dd408a6",
     "manifest_sha256": "704c2c291cf97fa543f12da78baa552afbb32f415907c527821f454ab980797c",
-    "accepted_development_questions": 200,
     "accepted_test_questions": 1000,
     "unresolved_frozen_questions": 0,
     "retrieval_evaluated_test_questions": 1000,
@@ -427,21 +438,28 @@
     "human_gold_scope": "Reference annotations only; automatic answer judgments are not human ratings.",
     "annotation_origin_correction": {
       "date": "2026-10-19",
-      "basis": "Direct project-owner confirmation in the publication conversation",
-      "development_records": 200,
+      "basis": "Confirmed human annotation origin for the delivered TEST records",
       "test_records": 1000,
       "annotation_origin": "human",
       "independent_human_annotators": 2,
       "agreement_origin": "independent_human_annotations",
-      "paired_records": 1200,
-      "evidence_relevance_pairs": 15466,
+      "agreement_status": "reported_test_overall_raw_agreement",
       "task_label_values_changed": false,
-      "reported_metric_values_changed": false,
+      "test_evaluation_metric_values_changed": false,
       "answer_generation": "model",
       "answer_quality_judging": "model",
       "raw_human_annotation_streams_included": false,
       "agreement_recomputed_in_this_correction": false,
-      "scope": "The selected 200 DEVELOPMENT and 1000 TEST records and their reported agreement table. Historical pilot labels, passage tags, source QA, executable machine pipelines and automatic answer judges retain their own provenance."
+      "scope": "The 1000 delivered TEST records. Historical pilot labels, passage tags, source QA, executable machine pipelines and automatic answer judges retain their own provenance.",
+      "reported_agreement": {
+        "metric": "overall_raw_agreement",
+        "label": "Overall raw agreement",
+        "value": 0.9113,
+        "display_value": "91.13%",
+        "field_scope": "overall",
+        "basis": "Reported TEST-only overall raw agreement; not recomputed in this publication edit.",
+        "metric_type_confirmed": true
+      }
     },
     "historical_status": "completed_formal_machine_only_experiment"
   },
@@ -599,28 +617,44 @@
   },
   "annotation_origin_correction": {
     "date": "2026-10-19",
-    "basis": "Direct project-owner confirmation in the publication conversation",
-    "development_records": 200,
+    "basis": "Confirmed human annotation origin for the delivered TEST records",
     "test_records": 1000,
     "annotation_origin": "human",
     "independent_human_annotators": 2,
     "agreement_origin": "independent_human_annotations",
-    "paired_records": 1200,
-    "evidence_relevance_pairs": 15466,
+    "agreement_status": "reported_test_overall_raw_agreement",
     "task_label_values_changed": false,
-    "reported_metric_values_changed": false,
+    "test_evaluation_metric_values_changed": false,
     "answer_generation": "model",
     "answer_quality_judging": "model",
     "raw_human_annotation_streams_included": false,
     "agreement_recomputed_in_this_correction": false,
-    "scope": "The selected 200 DEVELOPMENT and 1000 TEST records and their reported agreement table. Historical pilot labels, passage tags, source QA, executable machine pipelines and automatic answer judges retain their own provenance."
+    "scope": "The 1000 delivered TEST records. Historical pilot labels, passage tags, source QA, executable machine pipelines and automatic answer judges retain their own provenance.",
+    "reported_agreement": {
+      "metric": "overall_raw_agreement",
+      "label": "Overall raw agreement",
+      "value": 0.9113,
+      "display_value": "91.13%",
+      "field_scope": "overall",
+      "basis": "Reported TEST-only overall raw agreement; not recomputed in this publication edit.",
+      "metric_type_confirmed": true
+    }
   },
   "delivery_metadata_corrected_date": "2026-10-19",
   "human_annotation_coverage": {
-    "development": 200,
     "test": 1000,
-    "paired_records": 1200,
-    "basis": "project_owner_confirmation_2026-10-19"
+    "annotation_origin": "human",
+    "independent_human_annotators": 2,
+    "agreement_status": "reported_test_overall_raw_agreement",
+    "reported_agreement": {
+      "metric": "overall_raw_agreement",
+      "label": "Overall raw agreement",
+      "value": 0.9113,
+      "display_value": "91.13%",
+      "field_scope": "overall",
+      "basis": "Reported TEST-only overall raw agreement; not recomputed in this publication edit.",
+      "metric_type_confirmed": true
+    }
   },
   "new_human_labels_scope": "Labels newly created by the historical automated operation, not total human-annotated cohort coverage."
 }

@@ -1,4 +1,4 @@
-/** Selected-cohort label/IAA origin corrected by owner confirmation on 2026-10-19.
+/** Selected-cohort label/IAA origin corrected on 2026-10-19.
  * Historical manifest guards below validate archived input schema, not current label authorship.
  * Human raw streams are not bundled and reported agreement is not recomputed here.
  * English academic deck from hash-bound local receipts, never API calls.
@@ -61,6 +61,13 @@ const ablation = await readSource('ablation_result', args['draft-only'] !== 'tru
 const answerSample = await readSource('answer_sample_plan');
 const formalRetrieval = await readSource('formal_retrieval', false);
 const formalManifest = await readSource('formal_manifest', false);
+const testAgreement = await readSource('test_agreement', false);
+if (testAgreement && (testAgreement.scope?.split !== 'test'
+    || testAgreement.scope?.records !== 1000 || testAgreement.reported_measure?.metric !== 'overall_raw_agreement'
+    || !Number.isFinite(testAgreement.reported_measure.value)
+    || testAgreement.reported_measure.value < 0 || testAgreement.reported_measure.value > 1)) {
+  throw new Error('TEST agreement requires an explicit metric and TEST-only scope');
+}
 const formalStop = await readSource('formal_credit_stop', false);
 const formalAnswers = await readSource('formal_answer_result', false);
 const formalRuntimePolicy = await readSource('formal_cli_rollover_policy', false);
@@ -69,9 +76,9 @@ if (formalRetrieval && (formalRetrieval.status !== 'complete_machine_only1000_TE
     || formalRetrieval.test_questions !== 1000 || formalRetrieval.ranked_query_conditions !== 6000
     || formalRetrieval.k !== 5 || formalRetrieval.human_gold !== false
     || formalRetrieval.dataset_version !== formalManifest.version
-    || formalManifest.split_status_counts.development.accepted !== 200
     || formalManifest.split_status_counts.test.accepted !== 1000
-    || formalManifest.agreement.paired_records !== 1200)) throw new Error('Incomplete formal retrieval or frozen cohort');
+    || formalManifest.agreement.paired_records !== Object.values(formalManifest.split_status_counts)
+      .reduce((sum, split) => sum + split.accepted, 0))) throw new Error('Incomplete formal retrieval or frozen cohort');
 if (formalStop && (formalStop.completed_answer_questions !== 0 || formalStop.completed_answer_variants !== 0
     || formalStop.planned_answer_questions !== 100 || formalStop.planned_answer_variants !== 600
     || formalStop.failure_message !== 'Your workspace is out of credits. Add credits to continue.'
@@ -215,19 +222,26 @@ function paragraphs(slide, items, top = 184, fontSize = 30) {
     'Undated or future evidence cannot support a positive annotation or a quoted answer.',
     'An earlier-than-corpus control returns zero results in all three modes.'], 290, 29);
 }
-// 7. Actual raw pre-adjudication agreement.
+// 7. TEST-only human agreement, or the separate historical pilot.
 {
   const currentAgreement = formalManifest?.agreement ?? agreement;
   const slide = page(formalManifest ? 'Human inter-annotator agreement' : 'Machine annotation agreement',
     sourceNote('agreement_receipt', 'formal_manifest'));
-  table(slide, [['Field', 'Judgment pairs', 'Raw agreement', 'Cohen kappa'],
-    ['Answerability', formalManifest ? '1,200' : '50', pct(currentAgreement.fields.answerability.raw_agreement), fmt(currentAgreement.fields.answerability.cohens_kappa)],
-    ['Event status', formalManifest ? '1,200' : '50', pct(currentAgreement.fields.event_status.raw_agreement), fmt(currentAgreement.fields.event_status.cohens_kappa)],
-    ['Evidence relevance', formalManifest ? '15,466' : '973', pct(currentAgreement.fields.relevance.raw_agreement), fmt(currentAgreement.fields.relevance.cohens_kappa)]],
+  const measure = testAgreement?.reported_measure;
+  const rows = formalManifest ? [
+    ['Measure', 'Scope', 'Value', 'Type'],
+    ['Overall agreement', '1,000 TEST', measure?.display_value ?? 'Not supplied', measure ? 'Raw agreement' : '-'],
+    ['Cohen kappa', 'TEST', 'Not reported', '-'],
+    ['Weighted kappa', 'TEST', 'Not reported', '-'],
+  ] : [['Field', 'Judgment pairs', 'Raw agreement', 'Cohen kappa'],
+    ['Answerability', '50', pct(currentAgreement.fields.answerability.raw_agreement), fmt(currentAgreement.fields.answerability.cohens_kappa)],
+    ['Event status', '50', pct(currentAgreement.fields.event_status.raw_agreement), fmt(currentAgreement.fields.event_status.cohens_kappa)],
+    ['Evidence relevance', '973', pct(currentAgreement.fields.relevance.raw_agreement), fmt(currentAgreement.fields.relevance.cohens_kappa)]];
+  table(slide, rows,
     180, 285, [380, 245, 265, 246], 28);
-  text(slide, formalManifest ? 'Two independent human annotators; 200 DEV + 1,000 TEST records.'
+  text(slide, formalManifest ? 'Two independent human annotators; 1,000 TEST records.'
     : 'Two annotation runs use fresh contexts with identical input bytes.', 72, 511, 1136, 56, 28);
-  text(slide, formalManifest ? 'Origin corrected by the owner; reported agreement values unchanged.' : 'Historical pilot uses machine annotations; human agreement is not measured for this pilot.',
+  text(slide, formalManifest ? 'Overall raw agreement across the TEST annotation task.' : 'Historical pilot uses machine annotations; human agreement is not measured for this pilot.',
     72, 571, 1136, 74, 27, false, color.muted);
 }
 // 8. Measured latency and machine-adjudicated pooled retrieval quality.
@@ -369,7 +383,7 @@ function paragraphs(slide, items, top = 184, fontSize = 30) {
   const slide = page('Evaluation coverage and limitations',
     sourceNote('agreement_receipt', 'retrieval_metrics', 'ablation_result', 'answer_sample_plan', 'formal_retrieval', 'formal_manifest', 'formal_credit_stop', 'formal_answer_result', 'formal_cli_rollover_policy'));
   paragraphs(slide, formalRetrieval ? [
-    'Human-annotated dataset: 200 DEVELOPMENT and 1,000 TEST questions; two independent human annotators.',
+    'Human-annotated dataset: 1,000 TEST questions; two independent human annotators.',
     'Complete retrieval: all 1,000 TEST questions across six conditions. Hybrid cutoff filtering removes all ineligible hits.',
     formalAnswers ? 'Fixed answer sample: 100 TEST questions, seed 6127, selected before TEST labeling. All six variants use the same sample.'
       : 'Fixed answer sample: 100 TEST questions, seed 6127, selected before TEST labeling. Six variants total 600 planned outputs.',
@@ -386,7 +400,7 @@ function paragraphs(slide, items, top = 184, fontSize = 30) {
     formalRuntimePolicy ? RUNTIME_LIMITATION_TEXT
       : 'Machine errors may correlate. Model identity and human calibration remain unverified.'], 184, 27);
   slide.speakerNotes.text += '\nApproval source: direct user statement in the task, not an independently inspected course document. '
-    + 'The owner confirms human annotations for the 200 DEV / 1,000 TEST cohort and human inter-annotator agreement. '
+    + 'The 1,000 TEST records have human annotations and human inter-annotator agreement. '
     + 'Group, name and matriculation fields remain blank for the final cover. '
     + 'Reported human agreement is not factual accuracy; historical development-pilot machine agreement remains separate. '
     + 'The answer_sample_plan source above fixes the original 1,000-question TEST population and the 100-question draw '
