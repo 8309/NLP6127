@@ -8,8 +8,6 @@ Student name: ____________________
 
 Matriculation number: ____________________
 
-Status: Final experiment results verified on 15 October 2026, Singapore time. Held-out retrieval covers all 1,000 TEST questions, and the fixed answer sample covers 100 questions in six variants, producing 600 evaluated answers. The zero-model-call offline audit passes under the explicitly approved two-CLI runtime amendment and verifies 2,402 protected files. Local artifacts have separate validation records in the submission checklist. Identity fields, redistribution clearance and submission links remain pending. [47][48]
-
 ## Abstract
 
 Oil Evidence is a local retrieval augmented generation (RAG) workbench for questions about crude-oil supply, production policies, sanctions and transport disruptions. Its central requirement is to explain what the available evidence establishes at a specified cutoff date, rather than predict prices or provide investment advice. The system combines keyword and semantic retrieval, presents traceable evidence, and optionally generates cited claims with a second support-checking pass.
